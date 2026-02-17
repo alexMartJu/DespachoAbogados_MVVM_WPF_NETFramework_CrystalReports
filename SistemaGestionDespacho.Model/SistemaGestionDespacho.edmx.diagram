@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f72e3905d1a840c386a8f6c3fb70688f" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="SistemaGestionDespachoModel.Actuaciones" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaGestionDespachoModel.Citas" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaGestionDespachoModel.Clientes" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaGestionDespachoModel.EstadosExpediente" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SistemaGestionDespachoModel.Expedientes" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="SistemaGestionDespachoModel.FK_Actuaciones_Expedientes" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaGestionDespachoModel.FK_Citas_Clientes" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaGestionDespachoModel.FK_Citas_Expedientes" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaGestionDespachoModel.FK_Expedientes_Clientes" ManuallyRouted="false" />
+        <AssociationConnector Association="SistemaGestionDespachoModel.FK_Expedientes_Estados" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

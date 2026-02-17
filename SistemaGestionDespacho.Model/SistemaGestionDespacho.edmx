@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SistemaGestionDespachoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Actuaciones">
+          <Key>
+            <PropertyRef Name="ActuacionId" />
+          </Key>
+          <Property Name="ActuacionId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ExpedienteId" Type="int" Nullable="false" />
+          <Property Name="Fecha" Type="datetime" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Citas">
+          <Key>
+            <PropertyRef Name="CitaId" />
+          </Key>
+          <Property Name="CitaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClienteId" Type="int" />
+          <Property Name="ExpedienteId" Type="int" />
+          <Property Name="FechaHora" Type="datetime" Nullable="false" />
+          <Property Name="Lugar" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Motivo" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Estado" Type="nvarchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="ClienteId" />
+          </Key>
+          <Property Name="ClienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Apellidos" Type="nvarchar" MaxLength="150" />
+          <Property Name="DNI_CIF" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="20" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Direccion" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="FechaRegistro" Type="datetime" Nullable="false" />
+          <Property Name="Activo" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EstadosExpediente">
+          <Key>
+            <PropertyRef Name="EstadoId" />
+          </Key>
+          <Property Name="EstadoId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="Expedientes">
+          <Key>
+            <PropertyRef Name="ExpedienteId" />
+          </Key>
+          <Property Name="ExpedienteId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Codigo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ClienteId" Type="int" Nullable="false" />
+          <Property Name="EstadoId" Type="int" Nullable="false" />
+          <Property Name="Tipo" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FechaApertura" Type="datetime" Nullable="false" />
+          <Property Name="FechaCierre" Type="datetime" />
+          <Property Name="Titulo" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Actuaciones_Expedientes">
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="1" />
+          <End Role="Actuaciones" Type="Self.Actuaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Expedientes">
+              <PropertyRef Name="ExpedienteId" />
+            </Principal>
+            <Dependent Role="Actuaciones">
+              <PropertyRef Name="ExpedienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Citas_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Citas">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Citas_Expedientes">
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="0..1" />
+          <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Expedientes">
+              <PropertyRef Name="ExpedienteId" />
+            </Principal>
+            <Dependent Role="Citas">
+              <PropertyRef Name="ExpedienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Expedientes_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Expedientes">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Expedientes_Estados">
+          <End Role="EstadosExpediente" Type="Self.EstadosExpediente" Multiplicity="1" />
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadosExpediente">
+              <PropertyRef Name="EstadoId" />
+            </Principal>
+            <Dependent Role="Expedientes">
+              <PropertyRef Name="EstadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemaGestionDespachoModelStoreContainer">
+          <EntitySet Name="Actuaciones" EntityType="Self.Actuaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Citas" EntityType="Self.Citas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EstadosExpediente" EntityType="Self.EstadosExpediente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Expedientes" EntityType="Self.Expedientes" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Actuaciones_Expedientes" Association="Self.FK_Actuaciones_Expedientes">
+            <End Role="Expedientes" EntitySet="Expedientes" />
+            <End Role="Actuaciones" EntitySet="Actuaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Citas_Clientes" Association="Self.FK_Citas_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Citas" EntitySet="Citas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Citas_Expedientes" Association="Self.FK_Citas_Expedientes">
+            <End Role="Expedientes" EntitySet="Expedientes" />
+            <End Role="Citas" EntitySet="Citas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Expedientes_Clientes" Association="Self.FK_Expedientes_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Expedientes" EntitySet="Expedientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Expedientes_Estados" Association="Self.FK_Expedientes_Estados">
+            <End Role="EstadosExpediente" EntitySet="EstadosExpediente" />
+            <End Role="Expedientes" EntitySet="Expedientes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SistemaGestionDespachoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Actuaciones">
+          <Key>
+            <PropertyRef Name="ActuacionId" />
+          </Key>
+          <Property Name="ActuacionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ExpedienteId" Type="Int32" Nullable="false" />
+          <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Expedientes" Relationship="Self.FK_Actuaciones_Expedientes" FromRole="Actuaciones" ToRole="Expedientes" />
+        </EntityType>
+        <EntityType Name="Citas">
+          <Key>
+            <PropertyRef Name="CitaId" />
+          </Key>
+          <Property Name="CitaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClienteId" Type="Int32" />
+          <Property Name="ExpedienteId" Type="Int32" />
+          <Property Name="FechaHora" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Lugar" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Motivo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Estado" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK_Citas_Clientes" FromRole="Citas" ToRole="Clientes" />
+          <NavigationProperty Name="Expedientes" Relationship="Self.FK_Citas_Expedientes" FromRole="Citas" ToRole="Expedientes" />
+        </EntityType>
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="ClienteId" />
+          </Key>
+          <Property Name="ClienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Apellidos" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="DNI_CIF" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Direccion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FechaRegistro" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Activo" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Citas" Relationship="Self.FK_Citas_Clientes" FromRole="Clientes" ToRole="Citas" />
+          <NavigationProperty Name="Expedientes" Relationship="Self.FK_Expedientes_Clientes" FromRole="Clientes" ToRole="Expedientes" />
+        </EntityType>
+        <EntityType Name="EstadosExpediente">
+          <Key>
+            <PropertyRef Name="EstadoId" />
+          </Key>
+          <Property Name="EstadoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Expedientes" Relationship="Self.FK_Expedientes_Estados" FromRole="EstadosExpediente" ToRole="Expedientes" />
+        </EntityType>
+        <EntityType Name="Expedientes">
+          <Key>
+            <PropertyRef Name="ExpedienteId" />
+          </Key>
+          <Property Name="ExpedienteId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Codigo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ClienteId" Type="Int32" Nullable="false" />
+          <Property Name="EstadoId" Type="Int32" Nullable="false" />
+          <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FechaApertura" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="FechaCierre" Type="DateTime" Precision="3" />
+          <Property Name="Titulo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Actuaciones" Relationship="Self.FK_Actuaciones_Expedientes" FromRole="Expedientes" ToRole="Actuaciones" />
+          <NavigationProperty Name="Citas" Relationship="Self.FK_Citas_Expedientes" FromRole="Expedientes" ToRole="Citas" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK_Expedientes_Clientes" FromRole="Expedientes" ToRole="Clientes" />
+          <NavigationProperty Name="EstadosExpediente" Relationship="Self.FK_Expedientes_Estados" FromRole="Expedientes" ToRole="EstadosExpediente" />
+        </EntityType>
+        <Association Name="FK_Actuaciones_Expedientes">
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="1" />
+          <End Role="Actuaciones" Type="Self.Actuaciones" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Expedientes">
+              <PropertyRef Name="ExpedienteId" />
+            </Principal>
+            <Dependent Role="Actuaciones">
+              <PropertyRef Name="ExpedienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Citas_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Citas">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Citas_Expedientes">
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="0..1" />
+          <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Expedientes">
+              <PropertyRef Name="ExpedienteId" />
+            </Principal>
+            <Dependent Role="Citas">
+              <PropertyRef Name="ExpedienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Expedientes_Clientes">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="1" />
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteId" />
+            </Principal>
+            <Dependent Role="Expedientes">
+              <PropertyRef Name="ClienteId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Expedientes_Estados">
+          <End Role="EstadosExpediente" Type="Self.EstadosExpediente" Multiplicity="1" />
+          <End Role="Expedientes" Type="Self.Expedientes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EstadosExpediente">
+              <PropertyRef Name="EstadoId" />
+            </Principal>
+            <Dependent Role="Expedientes">
+              <PropertyRef Name="EstadoId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemaGestionDespachoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Actuaciones" EntityType="Self.Actuaciones" />
+          <EntitySet Name="Citas" EntityType="Self.Citas" />
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+          <EntitySet Name="EstadosExpediente" EntityType="Self.EstadosExpediente" />
+          <EntitySet Name="Expedientes" EntityType="Self.Expedientes" />
+          <AssociationSet Name="FK_Actuaciones_Expedientes" Association="Self.FK_Actuaciones_Expedientes">
+            <End Role="Expedientes" EntitySet="Expedientes" />
+            <End Role="Actuaciones" EntitySet="Actuaciones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Citas_Clientes" Association="Self.FK_Citas_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Citas" EntitySet="Citas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Citas_Expedientes" Association="Self.FK_Citas_Expedientes">
+            <End Role="Expedientes" EntitySet="Expedientes" />
+            <End Role="Citas" EntitySet="Citas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Expedientes_Clientes" Association="Self.FK_Expedientes_Clientes">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Expedientes" EntitySet="Expedientes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Expedientes_Estados" Association="Self.FK_Expedientes_Estados">
+            <End Role="EstadosExpediente" EntitySet="EstadosExpediente" />
+            <End Role="Expedientes" EntitySet="Expedientes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SistemaGestionDespachoModelStoreContainer" CdmEntityContainer="SistemaGestionDespachoEntities">
+          <EntitySetMapping Name="Actuaciones">
+            <EntityTypeMapping TypeName="SistemaGestionDespachoModel.Actuaciones">
+              <MappingFragment StoreEntitySet="Actuaciones">
+                <ScalarProperty Name="ActuacionId" ColumnName="ActuacionId" />
+                <ScalarProperty Name="ExpedienteId" ColumnName="ExpedienteId" />
+                <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Citas">
+            <EntityTypeMapping TypeName="SistemaGestionDespachoModel.Citas">
+              <MappingFragment StoreEntitySet="Citas">
+                <ScalarProperty Name="CitaId" ColumnName="CitaId" />
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+                <ScalarProperty Name="ExpedienteId" ColumnName="ExpedienteId" />
+                <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
+                <ScalarProperty Name="Lugar" ColumnName="Lugar" />
+                <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="SistemaGestionDespachoModel.Clientes">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+                <ScalarProperty Name="DNI_CIF" ColumnName="DNI_CIF" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+                <ScalarProperty Name="Activo" ColumnName="Activo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EstadosExpediente">
+            <EntityTypeMapping TypeName="SistemaGestionDespachoModel.EstadosExpediente">
+              <MappingFragment StoreEntitySet="EstadosExpediente">
+                <ScalarProperty Name="EstadoId" ColumnName="EstadoId" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Expedientes">
+            <EntityTypeMapping TypeName="SistemaGestionDespachoModel.Expedientes">
+              <MappingFragment StoreEntitySet="Expedientes">
+                <ScalarProperty Name="ExpedienteId" ColumnName="ExpedienteId" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="ClienteId" ColumnName="ClienteId" />
+                <ScalarProperty Name="EstadoId" ColumnName="EstadoId" />
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="FechaApertura" ColumnName="FechaApertura" />
+                <ScalarProperty Name="FechaCierre" ColumnName="FechaCierre" />
+                <ScalarProperty Name="Titulo" ColumnName="Titulo" />
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
