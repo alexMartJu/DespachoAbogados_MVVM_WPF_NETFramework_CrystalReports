@@ -1,0 +1,312 @@
+\chapter{⚖️\+Lexenda -\/ Sistema de Gestión de Despacho de Abogados }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{⚖️Lexenda -\/ Sistema de Gestión de Despacho de Abogados@{⚖️Lexenda -\/ Sistema de Gestión de Despacho de Abogados}}
+\label{md__r_e_a_d_m_e_autotoc_md6}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md6}%
+
+
+Sistema de escritorio desarrollado en WPF que permite gestionar de forma eficiente clientes, expedientes, actuaciones, citas e informes de un despacho de abogados, con generación de reportes profesionales mediante Crystal Reports.
+
+   \hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysection{\texorpdfstring{📋 Descripción del Proyecto}{📋 Descripción del Proyecto}}\label{md__r_e_a_d_m_e_autotoc_md7}
+{\bfseries{Lexenda}} es una aplicación de escritorio que implementa el patrón arquitectónico {\bfseries{MVVM}} (Model-\/\+View-\/\+View\+Model) para la gestión integral de un despacho de abogados. La aplicación permite:\+
+
+
+\begin{DoxyItemize}
+\item ✅ {\bfseries{Gestión de Cliente}}:\+ Registro, edición y desactivación de clientes con validación de DNI, email y teléfono
+\item ✅ {\bfseries{Gestión de Expedientes}}:\+ Administración de casos jurídicos con estados, tipos y seguimiento
+\item ✅ {\bfseries{Gestión de Actuaciones}}:\+ Registro de acciones realizadas en cada expediente
+\item ✅ {\bfseries{Gestión de Citas}}:\+ Sistema de agenda con validación de conflictos y fechas
+\item ✅ {\bfseries{Generación de Informes}}:\+ Reportes profesionales en Crystal Reports
+\item ✅ {\bfseries{Validaciones en tiempo real}}:\+ Control de datos y restricciones de negocio
+\item ✅ {\bfseries{Interfaz intuitiva}}:\+ Diseño moderno y fácil de usar
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{\texorpdfstring{🎯 Características principales}{🎯 Características principales}}\label{md__r_e_a_d_m_e_autotoc_md8}
+
+\begin{DoxyItemize}
+\item {\bfseries{Patrón MVVM}}:\+ Separación completa entre lógica de negocio y presentación
+\item {\bfseries{Data Binding}}:\+ Actualización automática de la interfaz
+\item {\bfseries{Commands}}:\+ Desacoplamiento de eventos mediante ICommand
+\item {\bfseries{Entity Framework 6}}:\+ Acceso a datos con ORM (Database First)
+\item {\bfseries{Validaciones}}:\+ Control de DNI español, emails, teléfonos y restricciones de integridad
+\item {\bfseries{Servicios}}:\+ Arquitectura en capas con Repository Pattern
+\item {\bfseries{Pruebas unitarias}}:\+ Tests con MSTest para validaciones críticas
+\item {\bfseries{Navegación inteligente}}:\+ Navegación directa desde expedientes a actuaciones y citas
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysection{\texorpdfstring{🛠️ Tecnologías Utilizadas}{🛠️ Tecnologías Utilizadas}}\label{md__r_e_a_d_m_e_autotoc_md10}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{\texorpdfstring{{\bfseries{Framework y Lenguajes}}}{{\bfseries{Framework y Lenguajes}}}}\label{md__r_e_a_d_m_e_autotoc_md11}
+
+\begin{DoxyItemize}
+\item {\bfseries{.NET Framework 4.\+8}}
+\item {\bfseries{C\#}}
+\item {\bfseries{WPF}} (Windows Presentation Foundation)
+\item {\bfseries{XAML}} para diseño de interfaces
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsection{\texorpdfstring{{\bfseries{Arquitectura y Patrones}}}{{\bfseries{Arquitectura y Patrones}}}}\label{md__r_e_a_d_m_e_autotoc_md12}
+
+\begin{DoxyItemize}
+\item {\bfseries{Patrón MVVM}} (Model-\/\+View-\/\+View\+Model)
+\item {\bfseries{Repository Pattern}} para acceso de datos
+\item {\bfseries{Service Layer}} para lógica de negocio
+\item {\bfseries{INotify\+Property\+Changed}} para notificaciones de cambios
+\item {\bfseries{ICommand}} para manejo de comandos
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysubsection{\texorpdfstring{{\bfseries{Acceso a Datos}}}{{\bfseries{Acceso a Datos}}}}\label{md__r_e_a_d_m_e_autotoc_md13}
+
+\begin{DoxyItemize}
+\item {\bfseries{Entity Framework 6}} (Database First)
+\item {\bfseries{SQL Server}} como motor de base de datos
+\item {\bfseries{LINQ to Entities}} para consultas
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsection{\texorpdfstring{{\bfseries{Generación de Informes}}}{{\bfseries{Generación de Informes}}}}\label{md__r_e_a_d_m_e_autotoc_md14}
+
+\begin{DoxyItemize}
+\item {\bfseries{SAP Crystal Reports}} para .NET Framework
+\item {\bfseries{Crystal\+Reports\+Viewer}} para visualización
+\item {\bfseries{Data\+Sets tipados}} para fuente de datos
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysubsection{\texorpdfstring{{\bfseries{Pruebas}}}{{\bfseries{Pruebas}}}}\label{md__r_e_a_d_m_e_autotoc_md15}
+
+\begin{DoxyItemize}
+\item {\bfseries{MSTest}} para pruebas unitarias y de integración
+\item Tests de validación de emails, teléfonos y conflictos de citas
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md16}{}\doxysubsection{\texorpdfstring{{\bfseries{Control de versiones}}}{{\bfseries{Control de versiones}}}}\label{md__r_e_a_d_m_e_autotoc_md16}
+
+\begin{DoxyItemize}
+\item {\bfseries{Git}} y {\bfseries{Git\+Hub}}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md18}{}\doxysection{\texorpdfstring{📦 Instalación}{📦 Instalación}}\label{md__r_e_a_d_m_e_autotoc_md18}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md19}{}\doxysubsection{\texorpdfstring{{\bfseries{Requisitos previos}}}{{\bfseries{Requisitos previos}}}}\label{md__r_e_a_d_m_e_autotoc_md19}
+Antes de instalar la aplicación, asegúrese de cumplir con los siguientes requisitos:\+
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Sistema operativo}}:\+ Windows 10 o superior
+\item {\bfseries{Componentes necesarios}}:\+
+\begin{DoxyItemize}
+\item {\bfseries{.NET Framework 4.\+8}} o superior
+\item {\bfseries{SQL Server}}
+\item {\bfseries{Crystal Reports Runtime}} para .NET Framework
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md21}{}\doxysubsection{\texorpdfstring{{\bfseries{Opción 1:\+ Instalación mediante Click\+Once (Recomendada para usuarios finales)}}}{{\bfseries{Opción 1:\+ Instalación mediante Click\+Once (Recomendada para usuarios finales)}}}}\label{md__r_e_a_d_m_e_autotoc_md21}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md22}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Pasos para el administrador del sistema:\+}}}{{\bfseries{Pasos para el administrador del sistema:\+}}}}\label{md__r_e_a_d_m_e_autotoc_md22}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Publicar la aplicación desde Visual Studio}}:\+
+\begin{DoxyItemize}
+\item Abra el proyecto en Visual Studio 2022 o superior
+\item Cambia la solución a Release (arriba, desplegable Debug → Release).
+\item Haga clic derecho sobre el proyecto {\ttfamily \doxylink{namespace_sistema_gestion_despacho_1_1_view}{Sistema\+Gestion\+Despacho.\+View}}
+\item Seleccione {\bfseries{"{}\+Publicar"{}}} (Publish)
+\end{DoxyItemize}
+\item {\bfseries{Configurar el método de publicación}}:\+
+\begin{DoxyItemize}
+\item Seleccione {\bfseries{Click\+Once}} como método de publicación
+\item Elija la ubicación de instalación
+\end{DoxyItemize}
+\item {\bfseries{Configurar opciones de instalación}}:\+
+\begin{DoxyItemize}
+\item {\bfseries{Modo de instalación}}:\+ Online o Offline
+\item {\bfseries{Actualizaciones}}:\+ Automáticas o manuales
+\item {\bfseries{Requisitos previos}}:\+ Marque .NET Framework 4.\+8
+\end{DoxyItemize}
+\item {\bfseries{Generar el instalador}}:\+
+\begin{DoxyItemize}
+\item Haga clic en {\bfseries{"{}\+Finalizar"{}}}
+\item Visual Studio generará:\+
+\begin{DoxyItemize}
+\item {\ttfamily setup.\+exe} (instalador)
+\item Archivos de manifiesto
+\item Archivos de la aplicación
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md23}{}\doxysubsubsection{\texorpdfstring{{\bfseries{Pasos para el usuario final:\+}}}{{\bfseries{Pasos para el usuario final:\+}}}}\label{md__r_e_a_d_m_e_autotoc_md23}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Acceder a la ubicación de instalación}}:\+
+\begin{DoxyItemize}
+\item Navegue a la carpeta compartida o sitio web configurado
+\item Localice el archivo {\ttfamily setup.\+exe}
+\end{DoxyItemize}
+\item {\bfseries{Ejecutar el instalador}}:\+
+\begin{DoxyItemize}
+\item Haga doble clic en {\ttfamily setup.\+exe}
+\item Si aparece un aviso de seguridad, haga clic en {\bfseries{"{}\+Instalar"{}}}
+\end{DoxyItemize}
+\item {\bfseries{Completar la instalación}}:\+
+\begin{DoxyItemize}
+\item El instalador descargará e instalará automáticamente:\+
+\begin{DoxyItemize}
+\item La aplicación
+\item Las dependencias necesarias
+\end{DoxyItemize}
+\item Se creará un acceso directo en el escritorio y en el menú Inicio
+\end{DoxyItemize}
+\item {\bfseries{Iniciar la aplicación}}:\+
+\begin{DoxyItemize}
+\item Haga doble clic en el icono "{}\+Lexenda Abogados"{} del escritorio
+\item O búsquela en el menú Inicio:\+ {\bfseries{"{}\+Lexenda Abogados"{}}}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md25}{}\doxysubsection{\texorpdfstring{{\bfseries{Opción 2:\+ Instalación manual (Para desarrolladores)}}}{{\bfseries{Opción 2:\+ Instalación manual (Para desarrolladores)}}}}\label{md__r_e_a_d_m_e_autotoc_md25}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md26}{}\doxysubsubsection{\texorpdfstring{{\bfseries{1. Clonar el repositorio}}}{{\bfseries{1. Clonar el repositorio}}}}\label{md__r_e_a_d_m_e_autotoc_md26}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git\ clone\ https://github.com/alexMartJu/DespachoAbogados\_MVVM\_WPF\_NETFramework\_CrystalReports.git}
+\DoxyCodeLine{cd\ DespachoAbogados\_MVVM\_WPF\_NETFramework\_CrystalReports}
+
+\end{DoxyCode}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md27}{}\doxysubsubsection{\texorpdfstring{{\bfseries{2. Configurar la base de datos}}}{{\bfseries{2. Configurar la base de datos}}}}\label{md__r_e_a_d_m_e_autotoc_md27}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Crear la base de datos}}:\+
+\begin{DoxyItemize}
+\item Abra SQL Server Management Studio
+\item Ejecute el script de creación de base de datos (ubicado en {\ttfamily /\+\+Database/\+\+Create\+Database.sql})
+\item Esto creará la base de datos {\ttfamily  \doxylink{namespace_sistema_gestion_despacho}{Sistema\+Gestion\+Despacho}} con las tablas:\+
+\begin{DoxyItemize}
+\item {\ttfamily Clientes}
+\item {\ttfamily Expedientes}
+\item {\ttfamily Estados\+Expediente}
+\item {\ttfamily Actuaciones}
+\item {\ttfamily Citas}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\item {\bfseries{Configurar la cadena de conexión}}:\+
+\begin{DoxyItemize}
+\item Abra los archivos {\ttfamily App.\+config} del proyecto
+\item Modifique las cadenas de conexión según su configuración
+\end{DoxyItemize}
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md28}{}\doxysubsubsection{\texorpdfstring{{\bfseries{3. Restaurar paquetes Nu\+Get}}}{{\bfseries{3. Restaurar paquetes Nu\+Get}}}}\label{md__r_e_a_d_m_e_autotoc_md28}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md29}{}\doxysubsubsection{\texorpdfstring{{\bfseries{4. Compilar la solución}}}{{\bfseries{4. Compilar la solución}}}}\label{md__r_e_a_d_m_e_autotoc_md29}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md30}{}\doxysubsubsection{\texorpdfstring{{\bfseries{5. Ejecutar la aplicación}}}{{\bfseries{5. Ejecutar la aplicación}}}}\label{md__r_e_a_d_m_e_autotoc_md30}
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md32}{}\doxysection{\texorpdfstring{🚀 Cómo Ejecutar}{🚀 Cómo Ejecutar}}\label{md__r_e_a_d_m_e_autotoc_md32}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md33}{}\doxysubsection{\texorpdfstring{{\bfseries{Ejecución normal}}}{{\bfseries{Ejecución normal}}}}\label{md__r_e_a_d_m_e_autotoc_md33}
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Localice el ejecutable}}:\+
+\begin{DoxyItemize}
+\item Si instaló con Click\+Once:\+ Use el acceso directo del escritorio
+\item Si está utilizando Visual Studio:\+ clicar en Iniciar
+\end{DoxyItemize}
+\item {\bfseries{Inicie la aplicación}}:\+
+\begin{DoxyItemize}
+\item Haga doble clic en el icono
+\item La aplicación verificará automáticamente la conexión a la base de datos
+\end{DoxyItemize}
+\item {\bfseries{Navegación inicial}}:\+
+\begin{DoxyItemize}
+\item Por defecto, se abre la sección {\bfseries{"{}\+Clientes"{}}}
+\item Use el menú superior para navegar entre secciones:\+
+\begin{DoxyItemize}
+\item 👥 Clientes
+\item 📁 Expedientes
+\item 📝 Actuaciones
+\item 📅 Citas
+\item 📊 Informes
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyEnumerate}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md35}{}\doxysection{\texorpdfstring{📸 Capturas de Pantalla}{📸 Capturas de Pantalla}}\label{md__r_e_a_d_m_e_autotoc_md35}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md36}{}\doxysubsection{\texorpdfstring{{\bfseries{1. Ventana Principal -\/ Gestión de Clientes}}}{{\bfseries{1. Ventana Principal -\/ Gestión de Clientes}}}}\label{md__r_e_a_d_m_e_autotoc_md36}
+ \begin{quote}
+{\itshape Vista principal mostrando el listado de clientes con opciones de crear, editar y eliminar. Incluye validación de DNI español, emails y teléfonos. Control de estado activo/\+inactivo.} \end{quote}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md38}{}\doxysubsection{\texorpdfstring{{\bfseries{2. Gestión de Expedientes}}}{{\bfseries{2. Gestión de Expedientes}}}}\label{md__r_e_a_d_m_e_autotoc_md38}
+ \begin{quote}
+{\itshape Administración de expedientes jurídicos con estados (Abierto, En curso, Pendiente, Cerrado), tipos (Civil, Penal, Laboral, Administrativo, Familia) y seguimiento. Validación automática antes de cerrar expedientes sin actuaciones. Navegación directa a actuaciones y citas del expediente.} \end{quote}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md40}{}\doxysubsection{\texorpdfstring{{\bfseries{3. Gestión de Actuaciones}}}{{\bfseries{3. Gestión de Actuaciones}}}}\label{md__r_e_a_d_m_e_autotoc_md40}
+ \begin{quote}
+{\itshape Registro de actuaciones de expedientes con tipos (Llamada, Reunión, Escrito presentado, Escrito recibido, Notificación, Gestión documental). Validación de expedientes cerrados. Filtros por expediente, tipo y fecha.} \end{quote}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md42}{}\doxysubsection{\texorpdfstring{{\bfseries{4. Gestión de Actuaciones}}}{{\bfseries{4. Gestión de Actuaciones}}}}\label{md__r_e_a_d_m_e_autotoc_md42}
+ \begin{quote}
+{\itshape Sistema de agenda con validación de conflictos horarios, estados (Pendiente, Realizada, Cancelada) y asociación a clientes o expedientes. Control de citas duplicadas.} \end{quote}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md44}{}\doxysubsection{\texorpdfstring{{\bfseries{5. Selección de Informes}}}{{\bfseries{5. Selección de Informes}}}}\label{md__r_e_a_d_m_e_autotoc_md44}
+ \begin{quote}
+{\itshape Panel de selección de informes con tres opciones disponibles:\+ Listado de clientes, Expedientes por estado e Actuaciones por expediente.} \end{quote}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md46}{}\doxysection{\texorpdfstring{🧪 Pruebas Unitarias y de Integración}{🧪 Pruebas Unitarias y de Integración}}\label{md__r_e_a_d_m_e_autotoc_md46}
+El proyecto incluye pruebas unitarias y de integración con {\bfseries{MSTest}} para validar la lógica crítica:\+\hypertarget{md__r_e_a_d_m_e_autotoc_md47}{}\doxysubsection{\texorpdfstring{{\bfseries{Ejecutar todas las pruebas}}}{{\bfseries{Ejecutar todas las pruebas}}}}\label{md__r_e_a_d_m_e_autotoc_md47}
+Desde Visual Studio \texorpdfstring{$>$}{>} Menú "{}\+Ver"{} \texorpdfstring{$>$}{>} "{}\+Explorador de pruebas"{} \texorpdfstring{$>$}{>} "{}\+Ejecutar todas las pruebas de la vista"{}\hypertarget{md__r_e_a_d_m_e_autotoc_md48}{}\doxysubsection{\texorpdfstring{{\bfseries{Pruebas incluidas}}}{{\bfseries{Pruebas incluidas}}}}\label{md__r_e_a_d_m_e_autotoc_md48}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md49}{}\doxysubsubsection{\texorpdfstring{{\bfseries{1. Cliente\+Email\+Tests}} -\/ Validación de formato de emails}{{\bfseries{1. Cliente\+Email\+Tests}} -\/ Validación de formato de emails}}\label{md__r_e_a_d_m_e_autotoc_md49}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md50}{}\doxysubsubsection{\texorpdfstring{{\bfseries{2. Cliente\+Telefono\+Tests}} -\/ Validación de teléfonos españoles}{{\bfseries{2. Cliente\+Telefono\+Tests}} -\/ Validación de teléfonos españoles}}\label{md__r_e_a_d_m_e_autotoc_md50}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md51}{}\doxysubsubsection{\texorpdfstring{{\bfseries{3. Cita\+Tests}} -\/ Control de conflictos horarios. Prueba de integración que verifica la restricción de citas duplicadas}{{\bfseries{3. Cita\+Tests}} -\/ Control de conflictos horarios. Prueba de integración que verifica la restricción de citas duplicadas}}\label{md__r_e_a_d_m_e_autotoc_md51}
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md53}{}\doxysection{\texorpdfstring{🔒 Seguridad y Validaciones}{🔒 Seguridad y Validaciones}}\label{md__r_e_a_d_m_e_autotoc_md53}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md54}{}\doxysubsection{\texorpdfstring{{\bfseries{Validaciones implementadas}}}{{\bfseries{Validaciones implementadas}}}}\label{md__r_e_a_d_m_e_autotoc_md54}
+
+\begin{DoxyTable}{2}{}{}{1}
+\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Tipo  &\SetCell{c,bg=\tableheadbgcolor,font=\bfseries}Descripción  \\
+{\bfseries{DNI único}}  &No permite DNI/\+\+CIF duplicados en la base de datos  \\
+{\bfseries{Formato DNI español}}  &Validación de 8 dígitos + letra  \\
+{\bfseries{Formato de email}}  &Validación con expresiones regulares  \\
+{\bfseries{Formato de teléfono}}  &Validación de 9 dígitos españoles (prefijo +34 opcional)  \\
+{\bfseries{Cliente activo}}  &No permite crear expedientes/\+citas para clientes desactivados  \\
+{\bfseries{Expediente cerrado}}  &No permite crear/\+editar actuaciones en expedientes cerrados  \\
+{\bfseries{Conflictos de citas}}  &Previene dos citas en la misma fecha/\+hora  \\
+{\bfseries{Integridad referencial}}  &No permite eliminar clientes con expedientes abiertos/\+en curso  \\
+{\bfseries{Cierre de expedientes}}  &Requiere al menos una actuación antes de cerrar  \\
+{\bfseries{Campos obligatorios}}  &Validación de campos requeridos antes de guardar  \\
+\end{DoxyTable}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md55}{}\doxysubsection{\texorpdfstring{{\bfseries{Restricciones de base de datos}}}{{\bfseries{Restricciones de base de datos}}}}\label{md__r_e_a_d_m_e_autotoc_md55}
+
+\begin{DoxyItemize}
+\item 🔑 {\bfseries{Claves primarias}}:\+ Identity en todos los IDs
+\item 🔗 {\bfseries{Claves foráneas}}:\+ Relaciones entre Clientes, Expedientes, Actuaciones, Citas y Estados
+\item 🚫 {\bfseries{Restricciones ON DELETE RESTRICT}}:\+ Control de eliminación según entidad
+\item ✅ {\bfseries{Índices únicos}}:\+ DNI\+\_\+\+CIF en la tabla Clientes, Codigo en Expedientes
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md57}{}\doxysection{\texorpdfstring{🤝 Contribuir}{🤝 Contribuir}}\label{md__r_e_a_d_m_e_autotoc_md57}
+¡\+Las contribuciones son bienvenidas! Si desea mejorar este proyecto:\+
+
+
+\begin{DoxyEnumerate}
+\item {\bfseries{Fork}} el repositorio
+\item Cree una {\bfseries{rama}} para su feature ({\ttfamily git checkout -\/b feature/\+\+Nueva\+Caracteristica})
+\item {\bfseries{Commit}} sus cambios ({\ttfamily git commit -\/m \textquotesingle{}Añadir nueva característica\textquotesingle{}})
+\item {\bfseries{Push}} a la rama ({\ttfamily git push origin feature/\+\+Nueva\+Caracteristica})
+\item Abra un {\bfseries{Pull Request}}
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md58}{}\doxysubsection{\texorpdfstring{{\bfseries{Guías para contribuir}}}{{\bfseries{Guías para contribuir}}}}\label{md__r_e_a_d_m_e_autotoc_md58}
+
+\begin{DoxyItemize}
+\item Siga el patrón MVVM establecido
+\item Mantenga la separación de capas
+\item Añada pruebas unitarias para nuevas funcionalidades
+\item Documente el código con comentarios XML
+\item Siga las convenciones de nomenclatura de C\#
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md60}{}\doxysection{\texorpdfstring{👨‍💻 Autores}{👨‍💻 Autores}}\label{md__r_e_a_d_m_e_autotoc_md60}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md61}{}\doxysubsection{\texorpdfstring{{\bfseries{Desarrollador Principal}}}{{\bfseries{Desarrollador Principal}}}}\label{md__r_e_a_d_m_e_autotoc_md61}
+{\bfseries{Alex Martínez Juan}}
+\begin{DoxyItemize}
+\item 💼 Git\+Hub:\+ \href{https://github.com/alexMartJu}{\texttt{@alex\+Mart\+Ju}}
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md63}{}\doxysection{\texorpdfstring{🌟 ¡\+Dale una estrella!}{🌟 ¡\+Dale una estrella!}}\label{md__r_e_a_d_m_e_autotoc_md63}
+Si este proyecto te ha sido útil, considera darle una ⭐ en Git\+Hub. ¡\+Gracias!
+
+\DoxyHorRuler{0}
+ 

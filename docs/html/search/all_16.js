@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['seguridad_20y_20validaciones_0',['🔒 Seguridad y Validaciones',['../md__r_e_a_d_m_e.html#autotoc_md53',1,'']]],
+  ['selección_20de_20informes_1',['&lt;b&gt;5. Selección de Informes&lt;/b&gt;',['../md__r_e_a_d_m_e.html#autotoc_md44',1,'']]],
+  ['setpropertyvalue_2',['SetPropertyValue',['../class_xaml_generated_namespace_1_1_generated_internal_type_helper.html#ade0f04c0f7b18dd5b170e071d5534d38',1,'XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo propertyInfo, object target, object value, System.Globalization.CultureInfo culture)'],['../class_xaml_generated_namespace_1_1_generated_internal_type_helper.html#ade0f04c0f7b18dd5b170e071d5534d38',1,'XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo propertyInfo, object target, object value, System.Globalization.CultureInfo culture)'],['../class_xaml_generated_namespace_1_1_generated_internal_type_helper.html#ade0f04c0f7b18dd5b170e071d5534d38',1,'XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo propertyInfo, object target, object value, System.Globalization.CultureInfo culture)']]],
+  ['sistema_20de_20gestión_20de_20despacho_20de_20abogados_3',['⚖️Lexenda - Sistema de Gestión de Despacho de Abogados',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['sistema_3a_4',['&lt;b&gt;Pasos para el administrador del sistema:&lt;/b&gt;',['../md__r_e_a_d_m_e.html#autotoc_md22',1,'']]],
+  ['sistemagestiondespacho_5',['SistemaGestionDespacho',['../namespace_sistema_gestion_despacho.html',1,'']]],
+  ['sistemagestiondespacho_3a_3ainformes_6',['Informes',['../namespace_sistema_gestion_despacho_1_1_informes.html',1,'SistemaGestionDespacho']]],
+  ['sistemagestiondespacho_3a_3amodel_7',['Model',['../namespace_sistema_gestion_despacho_1_1_model.html',1,'SistemaGestionDespacho']]],
+  ['sistemagestiondespacho_3a_3amodel_3a_3adatasets_8',['DataSets',['../namespace_sistema_gestion_despacho_1_1_model_1_1_data_sets.html',1,'SistemaGestionDespacho::Model']]],
+  ['sistemagestiondespacho_3a_3amodel_3a_3adatasets_3a_3ainformes_9',['Informes',['../namespace_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes.html',1,'SistemaGestionDespacho::Model::DataSets']]],
+  ['sistemagestiondespacho_3a_3amodel_3a_3arepositories_10',['Repositories',['../namespace_sistema_gestion_despacho_1_1_model_1_1_repositories.html',1,'SistemaGestionDespacho::Model']]],
+  ['sistemagestiondespacho_3a_3amodel_3a_3aservices_11',['Services',['../namespace_sistema_gestion_despacho_1_1_model_1_1_services.html',1,'SistemaGestionDespacho::Model']]],
+  ['sistemagestiondespacho_3a_3atests_12',['Tests',['../namespace_sistema_gestion_despacho_1_1_tests.html',1,'SistemaGestionDespacho']]],
+  ['sistemagestiondespacho_3a_3aview_13',['View',['../namespace_sistema_gestion_despacho_1_1_view.html',1,'SistemaGestionDespacho']]],
+  ['sistemagestiondespacho_3a_3aview_3a_3aproperties_14',['Properties',['../namespace_sistema_gestion_despacho_1_1_view_1_1_properties.html',1,'SistemaGestionDespacho::View']]],
+  ['sistemagestiondespacho_3a_3aview_3a_3aviews_15',['Views',['../namespace_sistema_gestion_despacho_1_1_view_1_1_views.html',1,'SistemaGestionDespacho::View']]],
+  ['sistemagestiondespacho_3a_3aviewmodel_16',['ViewModel',['../namespace_sistema_gestion_despacho_1_1_view_model.html',1,'SistemaGestionDespacho']]],
+  ['sistemagestiondespacho_3a_3aviewmodel_3a_3aviews_17',['Views',['../namespace_sistema_gestion_despacho_1_1_view_model_1_1_views.html',1,'SistemaGestionDespacho::ViewModel']]],
+  ['sistemagestiondespachoentities_18',['SistemaGestionDespachoEntities',['../class_sistema_gestion_despacho_1_1_model_1_1_sistema_gestion_despacho_entities.html',1,'SistemaGestionDespacho::Model']]],
+  ['solución_19',['&lt;b&gt;4. Compilar la solución&lt;/b&gt;',['../md__r_e_a_d_m_e.html#autotoc_md29',1,'']]],
+  ['status_20and_20support_20',['Status and Support',['../dir_daf6588bf429d41176222f373e2ad02a.html#autotoc_md1',1,'']]],
+  ['studio_21',['EF6 Tools for Visual Studio',['../dir_daf6588bf429d41176222f373e2ad02a.html#autotoc_md4',1,'']]],
+  ['support_22',['Status and Support',['../dir_daf6588bf429d41176222f373e2ad02a.html#autotoc_md1',1,'']]]
+];

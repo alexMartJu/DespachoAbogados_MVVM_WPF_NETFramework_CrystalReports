@@ -1,0 +1,4 @@
+var class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_expedientes_por_estado_helper =
+[
+    [ "Cargar", "class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_expedientes_por_estado_helper.html#adf488060682135719c69a604eec0b31b", null ]
+];

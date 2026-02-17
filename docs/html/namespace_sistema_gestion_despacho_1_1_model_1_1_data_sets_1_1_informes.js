@@ -1,0 +1,6 @@
+var namespace_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes =
+[
+    [ "InformeActuacionesHelper", "class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_actuaciones_helper.html", "class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_actuaciones_helper" ],
+    [ "InformeClientesHelper", "class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_clientes_helper.html", "class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_clientes_helper" ],
+    [ "InformeExpedientesPorEstadoHelper", "class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_expedientes_por_estado_helper.html", "class_sistema_gestion_despacho_1_1_model_1_1_data_sets_1_1_informes_1_1_informe_expedientes_por_estado_helper" ]
+];

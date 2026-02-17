@@ -1,0 +1,146 @@
+\doxysection{Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Actuacion\+Service Class Reference}
+\hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service}{}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service}\index{SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}}
+
+
+Servicio que gestiona la lógica de negocio relacionada con las actuaciones de un expediente.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a07cf094b4898d5a564d0c8b0ff6ab3a9}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a07cf094b4898d5a564d0c8b0ff6ab3a9} 
+{\bfseries Actuacion\+Service} ()
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service}{Actuacion\+Service}. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ac2e87ec448c22b82830022d01b8ee839}{Get\+By\+Expediente}} (int expediente\+Id)
+\begin{DoxyCompactList}\small\item\em Obtiene las actuaciones asociadas a un expediente. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ad4cccf7d15aae93a89cc9c6ace77cdfe}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todas las actuaciones disponibles. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a958c4a796593c8b45e1d670f92abc264}{Filtrar}} (int? expediente\+Id, string tipo, Date\+Time? fecha)
+\begin{DoxyCompactList}\small\item\em Filtra actuaciones según criterios opcionales. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a744f245491b9826482c3b85634544311}{Crear}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} a)
+\begin{DoxyCompactList}\small\item\em Crea una nueva actuación tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ad49cea6098a4962a6be10ea541611e7a}{Editar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} a)
+\begin{DoxyCompactList}\small\item\em Edita una actuación existente tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a75b09390de044b05c04f4a6cbedb8b57}{Eliminar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} a)
+\begin{DoxyCompactList}\small\item\em Elimina (borrado lógico) una actuación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio que gestiona la lógica de negocio relacionada con las actuaciones de un expediente. 
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a744f245491b9826482c3b85634544311}\index{SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}!Crear@{Crear}}
+\index{Crear@{Crear}!SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}}
+\doxysubsubsection{\texorpdfstring{Crear()}{Crear()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a744f245491b9826482c3b85634544311} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Actuacion\+Service.\+Crear (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}}}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea una nueva actuación tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Actuación a crear.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ad49cea6098a4962a6be10ea541611e7a}\index{SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}!Editar@{Editar}}
+\index{Editar@{Editar}!SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}}
+\doxysubsubsection{\texorpdfstring{Editar()}{Editar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ad49cea6098a4962a6be10ea541611e7a} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Actuacion\+Service.\+Editar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}}}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita una actuación existente tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Actuación con los datos actualizados (debe incluir Actuacion\+Id).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a75b09390de044b05c04f4a6cbedb8b57}\index{SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}!Eliminar@{Eliminar}}
+\index{Eliminar@{Eliminar}!SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}}
+\doxysubsubsection{\texorpdfstring{Eliminar()}{Eliminar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a75b09390de044b05c04f4a6cbedb8b57} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Actuacion\+Service.\+Eliminar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}}}]{a}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina (borrado lógico) una actuación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Actuación a eliminar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a958c4a796593c8b45e1d670f92abc264}\index{SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}!Filtrar@{Filtrar}}
+\index{Filtrar@{Filtrar}!SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}}
+\doxysubsubsection{\texorpdfstring{Filtrar()}{Filtrar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_a958c4a796593c8b45e1d670f92abc264} 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Actuacion\+Service.\+Filtrar (\begin{DoxyParamCaption}\item[{int?}]{expediente\+Id}{, }\item[{string}]{tipo}{, }\item[{Date\+Time?}]{fecha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Filtra actuaciones según criterios opcionales. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expediente\+Id} & Identificador del expediente (opcional).\\
+\hline
+{\em tipo} & Tipo de actuación (opcional).\\
+\hline
+{\em fecha} & Fecha para filtrar (solo la parte fecha) (opcional).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de actuaciones que coinciden con los filtros aplicados.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ad4cccf7d15aae93a89cc9c6ace77cdfe}\index{SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ad4cccf7d15aae93a89cc9c6ace77cdfe} 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Actuacion\+Service.\+Get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene todas las actuaciones disponibles. 
+
+\begin{DoxyReturn}{Returns}
+Lista con todas las actuaciones.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ac2e87ec448c22b82830022d01b8ee839}\index{SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}!GetByExpediente@{GetByExpediente}}
+\index{GetByExpediente@{GetByExpediente}!SistemaGestionDespacho.Model.Services.ActuacionService@{SistemaGestionDespacho.Model.Services.ActuacionService}}
+\doxysubsubsection{\texorpdfstring{GetByExpediente()}{GetByExpediente()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_actuacion_service_ac2e87ec448c22b82830022d01b8ee839} 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_actuaciones}{Actuaciones}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Actuacion\+Service.\+Get\+By\+Expediente (\begin{DoxyParamCaption}\item[{int}]{expediente\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene las actuaciones asociadas a un expediente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expediente\+Id} & Identificador del expediente.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de actuaciones del expediente especificado.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Sistema\+Gestion\+Despacho.\+Model/\+\+Services/\+Actuacion\+Service.\+cs\end{DoxyCompactItemize}

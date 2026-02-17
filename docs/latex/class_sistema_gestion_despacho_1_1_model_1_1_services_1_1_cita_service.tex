@@ -1,0 +1,147 @@
+\doxysection{Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cita\+Service Class Reference}
+\hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service}{}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service}\index{SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}}
+
+
+Servicio que gestiona la lógica de negocio relacionada con las citas.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_ad8adc28d00f447314721923543f9cf9f}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_ad8adc28d00f447314721923543f9cf9f} 
+{\bfseries Cita\+Service} ()
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service}{Cita\+Service}. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_ac621b48bd8cbc06686c7a70304f704f0}{Filtrar}} (Date\+Time? fecha, string estado, int? cliente\+Id, int? expediente\+Id)
+\begin{DoxyCompactList}\small\item\em Filtra las citas según los criterios especificados. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a84d2c4c9904ee5b492f1cec0f7613756}{Crear}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} c)
+\begin{DoxyCompactList}\small\item\em Crea una nueva cita tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a88f1a71f5e4d60e1995ba936b5f55e33}{Editar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} c)
+\begin{DoxyCompactList}\small\item\em Edita una cita existente tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_abcc5a8354bcddacad6ae2c052f6c9f93}{Cancelar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} c)
+\begin{DoxyCompactList}\small\item\em Cancela (elimina lógicamente) una cita. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a4be3b666bee17f452779d1fc72eac0d2}{Eliminar\+Permanente}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} c)
+\begin{DoxyCompactList}\small\item\em Elimina permanentemente una cita. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_adf76ec966aa17018f81fcb3dba6dc70c}{Eliminar\+Permanente}} (int cita\+Id)
+\begin{DoxyCompactList}\small\item\em Elimina permanentemente una cita por su identificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio que gestiona la lógica de negocio relacionada con las citas. 
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_abcc5a8354bcddacad6ae2c052f6c9f93}\index{SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}!Cancelar@{Cancelar}}
+\index{Cancelar@{Cancelar}!SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}}
+\doxysubsubsection{\texorpdfstring{Cancelar()}{Cancelar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_abcc5a8354bcddacad6ae2c052f6c9f93} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cita\+Service.\+Cancelar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cancela (elimina lógicamente) una cita. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cita a cancelar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a84d2c4c9904ee5b492f1cec0f7613756}\index{SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}!Crear@{Crear}}
+\index{Crear@{Crear}!SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}}
+\doxysubsubsection{\texorpdfstring{Crear()}{Crear()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a84d2c4c9904ee5b492f1cec0f7613756} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cita\+Service.\+Crear (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea una nueva cita tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cita a crear.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla o existe un conflicto de horario.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a88f1a71f5e4d60e1995ba936b5f55e33}\index{SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}!Editar@{Editar}}
+\index{Editar@{Editar}!SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}}
+\doxysubsubsection{\texorpdfstring{Editar()}{Editar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a88f1a71f5e4d60e1995ba936b5f55e33} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cita\+Service.\+Editar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita una cita existente tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cita con los datos actualizados (debe incluir Cita\+Id).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla o existe un conflicto de horario.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a4be3b666bee17f452779d1fc72eac0d2}\index{SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}!EliminarPermanente@{EliminarPermanente}}
+\index{EliminarPermanente@{EliminarPermanente}!SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}}
+\doxysubsubsection{\texorpdfstring{EliminarPermanente()}{EliminarPermanente()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_a4be3b666bee17f452779d1fc72eac0d2} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cita\+Service.\+Eliminar\+Permanente (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina permanentemente una cita. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cita a eliminar permanentemente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_adf76ec966aa17018f81fcb3dba6dc70c}\index{SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}!EliminarPermanente@{EliminarPermanente}}
+\index{EliminarPermanente@{EliminarPermanente}!SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}}
+\doxysubsubsection{\texorpdfstring{EliminarPermanente()}{EliminarPermanente()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_adf76ec966aa17018f81fcb3dba6dc70c} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cita\+Service.\+Eliminar\+Permanente (\begin{DoxyParamCaption}\item[{int}]{cita\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina permanentemente una cita por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cita\+Id} & Identificador de la cita a eliminar permanentemente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_ac621b48bd8cbc06686c7a70304f704f0}\index{SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}!Filtrar@{Filtrar}}
+\index{Filtrar@{Filtrar}!SistemaGestionDespacho.Model.Services.CitaService@{SistemaGestionDespacho.Model.Services.CitaService}}
+\doxysubsubsection{\texorpdfstring{Filtrar()}{Filtrar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cita_service_ac621b48bd8cbc06686c7a70304f704f0} 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cita\+Service.\+Filtrar (\begin{DoxyParamCaption}\item[{Date\+Time?}]{fecha}{, }\item[{string}]{estado}{, }\item[{int?}]{cliente\+Id}{, }\item[{int?}]{expediente\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Filtra las citas según los criterios especificados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fecha} & Fecha para filtrar (solo la parte fecha). Si es {\ttfamily null} no se filtra por fecha.\\
+\hline
+{\em estado} & Estado de la cita (p.\+ej. "{}\+Pendiente"{}, "{}\+Realizada"{}, "{}\+Cancelada"{}). Si es nulo o vacío no se filtra por estado.\\
+\hline
+{\em cliente\+Id} & Identificador del cliente. Si es {\ttfamily null} no se filtra por cliente.\\
+\hline
+{\em expediente\+Id} & Identificador del expediente. Si es {\ttfamily null} no se filtra por expediente.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de citas que cumplen los criterios de búsqueda.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Sistema\+Gestion\+Despacho.\+Model/\+\+Services/\+Cita\+Service.\+cs\end{DoxyCompactItemize}

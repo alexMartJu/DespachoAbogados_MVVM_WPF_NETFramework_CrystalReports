@@ -1,0 +1,190 @@
+\doxysection{Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service Class Reference}
+\hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service}{}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+
+
+Servicio que gestiona la lógica de negocio relacionada con clientes.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a207a9d709fb9efdc6a27566be7543361}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a207a9d709fb9efdc6a27566be7543361} 
+{\bfseries Cliente\+Service} ()
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service}{Cliente\+Service}. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a66d47e79f82df61200efd4be45b0a3f3}{Buscar}} (string nombre, string dni, bool solo\+Activos)
+\begin{DoxyCompactList}\small\item\em Busca clientes por nombre y/\+o DNI/\+\+CIF y permite filtrar solo activos. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a0a21437c296ad8c45554911e8dd9b55d}{Es\+Email\+Valido}} (string email)
+\begin{DoxyCompactList}\small\item\em Comprueba si un email tiene un formato válido. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a9c439b68f2838571fd25559121ba7f64}{Es\+Telefono\+Valido}} (string telefono)
+\begin{DoxyCompactList}\small\item\em Comprueba si un número de teléfono tiene un formato español válido. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_aa10de4ab577ce2768c0b4bde8fb2ad3b}{Crear}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} c)
+\begin{DoxyCompactList}\small\item\em Crea un nuevo cliente tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a34fba75c958521e5a9b93b578b999187}{Editar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} c)
+\begin{DoxyCompactList}\small\item\em Edita un cliente existente tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a93cee000fa8a8832156d4d7eaca07434}{Eliminar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} c)
+\begin{DoxyCompactList}\small\item\em Marca el cliente como eliminado (lógica de borrado del repositorio). Antes de desactivar comprueba si tiene expedientes abiertos o en curso. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_afd1fd00180a26b412e4f2f5aa3a7ae62}{Eliminar\+Permanente}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} c)
+\begin{DoxyCompactList}\small\item\em Elimina permanentemente un cliente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a9390bef8580df9ca605a9ec605c98df2}{Eliminar\+Permanente}} (int cliente\+Id)
+\begin{DoxyCompactList}\small\item\em Elimina permanentemente un cliente por su identificador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio que gestiona la lógica de negocio relacionada con clientes. 
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a66d47e79f82df61200efd4be45b0a3f3}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!Buscar@{Buscar}}
+\index{Buscar@{Buscar}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{Buscar()}{Buscar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a66d47e79f82df61200efd4be45b0a3f3} 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Buscar (\begin{DoxyParamCaption}\item[{string}]{nombre}{, }\item[{string}]{dni}{, }\item[{bool}]{solo\+Activos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Busca clientes por nombre y/\+o DNI/\+\+CIF y permite filtrar solo activos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre} & Término de búsqueda para el nombre (puede ser parcial). Si es nulo o vacío no se filtra por nombre.\\
+\hline
+{\em dni} & Término de búsqueda para el DNI/\+\+CIF (puede ser parcial). Si es nulo o vacío no se filtra por DNI/\+\+CIF.\\
+\hline
+{\em solo\+Activos} & Si es {\ttfamily true} se devuelven únicamente clientes activos.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de clientes que cumplen los criterios de búsqueda.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_aa10de4ab577ce2768c0b4bde8fb2ad3b}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!Crear@{Crear}}
+\index{Crear@{Crear}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{Crear()}{Crear()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_aa10de4ab577ce2768c0b4bde8fb2ad3b} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Crear (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea un nuevo cliente tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cliente a crear.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla o si el DNI/\+\+CIF ya pertenece a otro cliente.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a34fba75c958521e5a9b93b578b999187}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!Editar@{Editar}}
+\index{Editar@{Editar}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{Editar()}{Editar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a34fba75c958521e5a9b93b578b999187} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Editar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita un cliente existente tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cliente con los nuevos datos (debe incluir Cliente\+Id).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla, si el DNI/\+\+CIF pertenece a otro cliente o si se intenta desactivar un cliente con expedientes abiertos/\+en curso.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a93cee000fa8a8832156d4d7eaca07434}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!Eliminar@{Eliminar}}
+\index{Eliminar@{Eliminar}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{Eliminar()}{Eliminar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a93cee000fa8a8832156d4d7eaca07434} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Eliminar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Marca el cliente como eliminado (lógica de borrado del repositorio). Antes de desactivar comprueba si tiene expedientes abiertos o en curso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cliente a eliminar (desactivar).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si el cliente tiene expedientes en estado \textquotesingle{}Abierto\textquotesingle{} o \textquotesingle{}En curso\textquotesingle{}.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_afd1fd00180a26b412e4f2f5aa3a7ae62}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!EliminarPermanente@{EliminarPermanente}}
+\index{EliminarPermanente@{EliminarPermanente}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{EliminarPermanente()}{EliminarPermanente()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_afd1fd00180a26b412e4f2f5aa3a7ae62} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Eliminar\+Permanente (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}}}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina permanentemente un cliente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Cliente a eliminar permanentemente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a9390bef8580df9ca605a9ec605c98df2}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!EliminarPermanente@{EliminarPermanente}}
+\index{EliminarPermanente@{EliminarPermanente}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{EliminarPermanente()}{EliminarPermanente()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a9390bef8580df9ca605a9ec605c98df2} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Eliminar\+Permanente (\begin{DoxyParamCaption}\item[{int}]{cliente\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina permanentemente un cliente por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente\+Id} & Identificador del cliente a eliminar permanentemente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a0a21437c296ad8c45554911e8dd9b55d}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!EsEmailValido@{EsEmailValido}}
+\index{EsEmailValido@{EsEmailValido}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{EsEmailValido()}{EsEmailValido()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a0a21437c296ad8c45554911e8dd9b55d} 
+bool Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Es\+Email\+Valido (\begin{DoxyParamCaption}\item[{string}]{email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comprueba si un email tiene un formato válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & Email a validar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si el email es válido, {\ttfamily false} en caso contrario.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a9c439b68f2838571fd25559121ba7f64}\index{SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}!EsTelefonoValido@{EsTelefonoValido}}
+\index{EsTelefonoValido@{EsTelefonoValido}!SistemaGestionDespacho.Model.Services.ClienteService@{SistemaGestionDespacho.Model.Services.ClienteService}}
+\doxysubsubsection{\texorpdfstring{EsTelefonoValido()}{EsTelefonoValido()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_cliente_service_a9c439b68f2838571fd25559121ba7f64} 
+bool Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Cliente\+Service.\+Es\+Telefono\+Valido (\begin{DoxyParamCaption}\item[{string}]{telefono}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comprueba si un número de teléfono tiene un formato español válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em telefono} & Número de teléfono a validar. Se permiten prefijos y separadores.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si el teléfono es válido, {\ttfamily false} en caso contrario.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Sistema\+Gestion\+Despacho.\+Model/\+\+Services/\+Cliente\+Service.\+cs\end{DoxyCompactItemize}

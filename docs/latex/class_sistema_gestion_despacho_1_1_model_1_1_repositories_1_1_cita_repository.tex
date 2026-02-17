@@ -1,0 +1,111 @@
+\doxysection{Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cita\+Repository Class Reference}
+\hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository}{}\label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository}\index{SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}}
+
+
+Repositorio para operaciones CRUD sobre la entidad \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_afa995372b090049ac9cfdf48af32e716}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene todas las citas en el sistema, incluyendo las entidades relacionadas de cliente y expediente. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_aa1bc3be0d5b36bb8298b8dfec6ba4c98}{Add}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} cita)
+\begin{DoxyCompactList}\small\item\em Añade una nueva cita y persiste los cambios en la base de datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a47c57c05cf9709b2b3d4490d313c8e2c}{Update}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} cita)
+\begin{DoxyCompactList}\small\item\em Actualiza una cita existente con los valores proporcionados. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a818d8bf3cac81ef980bd79a79ee114e4}{Delete}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} cita)
+\begin{DoxyCompactList}\small\item\em Marca una cita como cancelada (borrado lógico) estableciendo su estado a "{}\+Cancelada"{}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a4c063faee37aa2f4cea3661215539e16}{Delete\+Permanent}} (int cita\+Id)
+\begin{DoxyCompactList}\small\item\em Elimina permanentemente una cita de la base de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositorio para operaciones CRUD sobre la entidad \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}. 
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_aa1bc3be0d5b36bb8298b8dfec6ba4c98}\index{SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}!Add@{Add}}
+\index{Add@{Add}!SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_aa1bc3be0d5b36bb8298b8dfec6ba4c98} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cita\+Repository.\+Add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}}}]{cita}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade una nueva cita y persiste los cambios en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cita} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas} a añadir.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a818d8bf3cac81ef980bd79a79ee114e4}\index{SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}!Delete@{Delete}}
+\index{Delete@{Delete}!SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a818d8bf3cac81ef980bd79a79ee114e4} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cita\+Repository.\+Delete (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}}}]{cita}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Marca una cita como cancelada (borrado lógico) estableciendo su estado a "{}\+Cancelada"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cita} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas} a cancelar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a4c063faee37aa2f4cea3661215539e16}\index{SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}!DeletePermanent@{DeletePermanent}}
+\index{DeletePermanent@{DeletePermanent}!SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}}
+\doxysubsubsection{\texorpdfstring{DeletePermanent()}{DeletePermanent()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a4c063faee37aa2f4cea3661215539e16} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cita\+Repository.\+Delete\+Permanent (\begin{DoxyParamCaption}\item[{int}]{cita\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina permanentemente una cita de la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cita\+Id} & Identificador de la cita a eliminar permanentemente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_afa995372b090049ac9cfdf48af32e716}\index{SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_afa995372b090049ac9cfdf48af32e716} 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cita\+Repository.\+Get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene todas las citas en el sistema, incluyendo las entidades relacionadas de cliente y expediente. 
+
+\begin{DoxyReturn}{Returns}
+Lista de \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas} disponibles.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a47c57c05cf9709b2b3d4490d313c8e2c}\index{SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}!Update@{Update}}
+\index{Update@{Update}!SistemaGestionDespacho.Model.Repositories.CitaRepository@{SistemaGestionDespacho.Model.Repositories.CitaRepository}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository_a47c57c05cf9709b2b3d4490d313c8e2c} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cita\+Repository.\+Update (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas}}}]{cita}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza una cita existente con los valores proporcionados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cita} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_citas}{Citas} con los datos actualizados (debe incluir {\ttfamily Cita\+Id}).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la cita a actualizar no existe.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Sistema\+Gestion\+Despacho.\+Model/\+\+Repositories/\+Cita\+Repository.\+cs\end{DoxyCompactItemize}

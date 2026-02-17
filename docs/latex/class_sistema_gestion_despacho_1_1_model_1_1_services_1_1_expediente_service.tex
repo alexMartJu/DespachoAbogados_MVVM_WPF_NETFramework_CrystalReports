@@ -1,0 +1,120 @@
+\doxysection{Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Expediente\+Service Class Reference}
+\hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service}{}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service}\index{SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}}
+
+
+Servicio que gestiona la lógica de negocio relacionada con los expedientes.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a42af17b90edbc1f0cbc07b5bc2ae04db}\label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a42af17b90edbc1f0cbc07b5bc2ae04db} 
+{\bfseries Expediente\+Service} ()
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service}{Expediente\+Service}. \end{DoxyCompactList}\item 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a15f329d93d51d2333bddd9c771e338f8}{Filtrar}} (int? cliente\+Id, string tipo, int? estado\+Id, Date\+Time? desde, Date\+Time? hasta)
+\begin{DoxyCompactList}\small\item\em Filtra expedientes según los criterios especificados. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a4d5f8206cd8c383bd7c37cf82af6756a}{Crear}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} e)
+\begin{DoxyCompactList}\small\item\em Crea un nuevo expediente tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a5c591d88f10ec66d1a2ec0a97c0c1ed4}{Editar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} e)
+\begin{DoxyCompactList}\small\item\em Edita un expediente existente tras validar sus datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a0e8f1849816ab5b1d1fa55e396ada02c}{Cerrar}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} e)
+\begin{DoxyCompactList}\small\item\em Cierra un expediente. No permite cerrar si el expediente no tiene actuaciones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio que gestiona la lógica de negocio relacionada con los expedientes. 
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a0e8f1849816ab5b1d1fa55e396ada02c}\index{SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}!Cerrar@{Cerrar}}
+\index{Cerrar@{Cerrar}!SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}}
+\doxysubsubsection{\texorpdfstring{Cerrar()}{Cerrar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a0e8f1849816ab5b1d1fa55e396ada02c} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Expediente\+Service.\+Cerrar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}}}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cierra un expediente. No permite cerrar si el expediente no tiene actuaciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Expediente a cerrar.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si el expediente no tiene actuaciones y no se puede cerrar.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a4d5f8206cd8c383bd7c37cf82af6756a}\index{SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}!Crear@{Crear}}
+\index{Crear@{Crear}!SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}}
+\doxysubsubsection{\texorpdfstring{Crear()}{Crear()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a4d5f8206cd8c383bd7c37cf82af6756a} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Expediente\+Service.\+Crear (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}}}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Crea un nuevo expediente tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Expediente a crear.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a5c591d88f10ec66d1a2ec0a97c0c1ed4}\index{SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}!Editar@{Editar}}
+\index{Editar@{Editar}!SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}}
+\doxysubsubsection{\texorpdfstring{Editar()}{Editar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a5c591d88f10ec66d1a2ec0a97c0c1ed4} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Expediente\+Service.\+Editar (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}}}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Edita un expediente existente tras validar sus datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Expediente con los datos actualizados (debe incluir Expediente\+Id).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si la validación falla.\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a15f329d93d51d2333bddd9c771e338f8}\index{SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}!Filtrar@{Filtrar}}
+\index{Filtrar@{Filtrar}!SistemaGestionDespacho.Model.Services.ExpedienteService@{SistemaGestionDespacho.Model.Services.ExpedienteService}}
+\doxysubsubsection{\texorpdfstring{Filtrar()}{Filtrar()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_services_1_1_expediente_service_a15f329d93d51d2333bddd9c771e338f8} 
+List$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Services.\+Expediente\+Service.\+Filtrar (\begin{DoxyParamCaption}\item[{int?}]{cliente\+Id}{, }\item[{string}]{tipo}{, }\item[{int?}]{estado\+Id}{, }\item[{Date\+Time?}]{desde}{, }\item[{Date\+Time?}]{hasta}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Filtra expedientes según los criterios especificados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente\+Id} & Identificador del cliente (opcional).\\
+\hline
+{\em tipo} & Tipo de expediente (opcional).\\
+\hline
+{\em estado\+Id} & Identificador del estado (opcional).\\
+\hline
+{\em desde} & Fecha de apertura mínima (opcional).\\
+\hline
+{\em hasta} & Fecha de apertura máxima (opcional).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista de expedientes que cumplen los criterios.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Sistema\+Gestion\+Despacho.\+Model/\+\+Services/\+Expediente\+Service.\+cs\end{DoxyCompactItemize}

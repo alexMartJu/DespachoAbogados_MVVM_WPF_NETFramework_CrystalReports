@@ -1,0 +1,114 @@
+\doxysection{Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Expediente\+Repository Class Reference}
+\hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository}{}\label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository}\index{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}}
+
+
+Repositorio para operaciones CRUD sobre la entidad \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IQueryable$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a1cd495c0c0aaebbc8517ce74fbaf4103}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene un IQueryable con todos los expedientes (sin seguimiento) incluyendo las entidades relacionadas de cliente y estado. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_ab38dd6f47372d6d8d26e4126cc2d1418}{Get\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Obtiene un expediente por su identificador. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a26caa3f54a43795074111d2816b1326f}{Add}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} expediente)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo expediente y persiste los cambios en la base de datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a859fbc672358a15bdf35c6b158e22ef0}{Update}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} expediente)
+\begin{DoxyCompactList}\small\item\em Actualiza un expediente existente con los valores proporcionados. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_affb94d6755860b8b0fe1c5ebcbb7a777}{Delete}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} expediente)
+\begin{DoxyCompactList}\small\item\em Cierra un expediente (borrado lógico) estableciendo su estado a cerrado y fecha de cierre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositorio para operaciones CRUD sobre la entidad \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}. 
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a26caa3f54a43795074111d2816b1326f}\index{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}!Add@{Add}}
+\index{Add@{Add}!SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a26caa3f54a43795074111d2816b1326f} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Expediente\+Repository.\+Add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}}}]{expediente}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade un nuevo expediente y persiste los cambios en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expediente} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes} a añadir.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_affb94d6755860b8b0fe1c5ebcbb7a777}\index{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}!Delete@{Delete}}
+\index{Delete@{Delete}!SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_affb94d6755860b8b0fe1c5ebcbb7a777} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Expediente\+Repository.\+Delete (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}}}]{expediente}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cierra un expediente (borrado lógico) estableciendo su estado a cerrado y fecha de cierre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expediente} & Expediente a cerrar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a1cd495c0c0aaebbc8517ce74fbaf4103}\index{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a1cd495c0c0aaebbc8517ce74fbaf4103} 
+IQueryable$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Expediente\+Repository.\+Get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene un IQueryable con todos los expedientes (sin seguimiento) incluyendo las entidades relacionadas de cliente y estado. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes} que representa la colección de expedientes.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_ab38dd6f47372d6d8d26e4126cc2d1418}\index{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}!GetById@{GetById}}
+\index{GetById@{GetById}!SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}}
+\doxysubsubsection{\texorpdfstring{GetById()}{GetById()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_ab38dd6f47372d6d8d26e4126cc2d1418} 
+\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}} Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Expediente\+Repository.\+Get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene un expediente por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del expediente a recuperar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia de \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes} si existe, o {\ttfamily null} si no se encuentra.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a859fbc672358a15bdf35c6b158e22ef0}\index{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}!Update@{Update}}
+\index{Update@{Update}!SistemaGestionDespacho.Model.Repositories.ExpedienteRepository@{SistemaGestionDespacho.Model.Repositories.ExpedienteRepository}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository_a859fbc672358a15bdf35c6b158e22ef0} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Expediente\+Repository.\+Update (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes}}}]{expediente}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza un expediente existente con los valores proporcionados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expediente} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_expedientes}{Expedientes} con los datos actualizados (debe incluir {\ttfamily Expediente\+Id}).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Exception} & Se lanza si el expediente a actualizar no existe.\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Sistema\+Gestion\+Despacho.\+Model/\+\+Repositories/\+Expediente\+Repository.\+cs\end{DoxyCompactItemize}

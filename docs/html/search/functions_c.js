@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['update_0',['Update',['../class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_actuacion_repository.html#aa505382a1bb45f5ee40224a20596e36f',1,'SistemaGestionDespacho.Model.Repositories.ActuacionRepository.Update()'],['../class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cita_repository.html#a47c57c05cf9709b2b3d4490d313c8e2c',1,'SistemaGestionDespacho.Model.Repositories.CitaRepository.Update()'],['../class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository.html#a7b15525fe19c3e3d5d52d098540e20da',1,'SistemaGestionDespacho.Model.Repositories.ClienteRepository.Update()'],['../class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_expediente_repository.html#a859fbc672358a15bdf35c6b158e22ef0',1,'SistemaGestionDespacho.Model.Repositories.ExpedienteRepository.Update()']]]
+];

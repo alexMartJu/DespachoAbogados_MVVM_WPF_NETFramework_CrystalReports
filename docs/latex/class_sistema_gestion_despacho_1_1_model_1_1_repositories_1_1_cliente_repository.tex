@@ -1,0 +1,126 @@
+\doxysection{Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cliente\+Repository Class Reference}
+\hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository}{}\label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository}\index{SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}}
+
+
+Repositorio para operaciones CRUD sobre la entidad \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IQueryable$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} $>$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_ae7edc46920ec4d33042a5f5a20378024}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene un IQueryable con todos los clientes (sin seguimiento) para permitir consultas diferidas y filtrado por el consumidor. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a210b83b91dff6dea49ee2cf286886f3f}{Get\+By\+Id}} (int id)
+\begin{DoxyCompactList}\small\item\em Obtiene un cliente por su identificador. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_ae729763e313f942bbf4de108e0dbda59}{Add}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} cliente)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo cliente y persiste los cambios en la base de datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a7b15525fe19c3e3d5d52d098540e20da}{Update}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} cliente)
+\begin{DoxyCompactList}\small\item\em Actualiza un cliente existente en la base de datos. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a6428d2055950bfe49fab88d84fc2cdfe}{Delete}} (\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} cliente)
+\begin{DoxyCompactList}\small\item\em Marca un cliente como inactivo (borrado lógico) estableciendo su propiedad {\ttfamily Activo} a {\ttfamily false}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a27a019cecdb2828f53be5e511e1d8690}{Delete\+Permanent}} (int cliente\+Id)
+\begin{DoxyCompactList}\small\item\em Elimina permanentemente un cliente de la base de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repositorio para operaciones CRUD sobre la entidad \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}. 
+
+\label{doc-func-members}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_ae729763e313f942bbf4de108e0dbda59}\index{SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}!Add@{Add}}
+\index{Add@{Add}!SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_ae729763e313f942bbf4de108e0dbda59} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cliente\+Repository.\+Add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}}}]{cliente}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade un nuevo cliente y persiste los cambios en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes} a añadir.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a6428d2055950bfe49fab88d84fc2cdfe}\index{SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}!Delete@{Delete}}
+\index{Delete@{Delete}!SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a6428d2055950bfe49fab88d84fc2cdfe} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cliente\+Repository.\+Delete (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}}}]{cliente}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Marca un cliente como inactivo (borrado lógico) estableciendo su propiedad {\ttfamily Activo} a {\ttfamily false}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes} a desactivar.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a27a019cecdb2828f53be5e511e1d8690}\index{SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}!DeletePermanent@{DeletePermanent}}
+\index{DeletePermanent@{DeletePermanent}!SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}}
+\doxysubsubsection{\texorpdfstring{DeletePermanent()}{DeletePermanent()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a27a019cecdb2828f53be5e511e1d8690} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cliente\+Repository.\+Delete\+Permanent (\begin{DoxyParamCaption}\item[{int}]{cliente\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina permanentemente un cliente de la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente\+Id} & Identificador del cliente a eliminar permanentemente.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_ae7edc46920ec4d33042a5f5a20378024}\index{SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_ae7edc46920ec4d33042a5f5a20378024} 
+IQueryable$<$ \doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} $>$ Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cliente\+Repository.\+Get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene un IQueryable con todos los clientes (sin seguimiento) para permitir consultas diferidas y filtrado por el consumidor. 
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes} que representa la colección de clientes.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a210b83b91dff6dea49ee2cf286886f3f}\index{SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}!GetById@{GetById}}
+\index{GetById@{GetById}!SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}}
+\doxysubsubsection{\texorpdfstring{GetById()}{GetById()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a210b83b91dff6dea49ee2cf286886f3f} 
+\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}} Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cliente\+Repository.\+Get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene un cliente por su identificador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del cliente a recuperar.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancia de \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes} si existe, o {\ttfamily null} si no se encuentra.
+\end{DoxyReturn}
+\Hypertarget{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a7b15525fe19c3e3d5d52d098540e20da}\index{SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}!Update@{Update}}
+\index{Update@{Update}!SistemaGestionDespacho.Model.Repositories.ClienteRepository@{SistemaGestionDespacho.Model.Repositories.ClienteRepository}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_sistema_gestion_despacho_1_1_model_1_1_repositories_1_1_cliente_repository_a7b15525fe19c3e3d5d52d098540e20da} 
+void Sistema\+Gestion\+Despacho.\+Model.\+Repositories.\+Cliente\+Repository.\+Update (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes}}}]{cliente}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza un cliente existente en la base de datos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente} & Objeto \doxylink{class_sistema_gestion_despacho_1_1_model_1_1_clientes}{Clientes} con los datos actualizados (debe incluir {\ttfamily Cliente\+Id}).\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Sistema\+Gestion\+Despacho.\+Model/\+\+Repositories/\+Cliente\+Repository.\+cs\end{DoxyCompactItemize}
